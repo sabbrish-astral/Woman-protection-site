@@ -115,5 +115,17 @@
         <p id="insta" style="font-size:20px;"><a href="https://www.instagram.com/call_me_siva_14377/?utm_source=ig_web_button_share_sheet" target="new"><i id="iconinsta" class="fa fa-instagram" style="font-size:25px;color:white"></i>call_me_siva_14377</a></p>
         </center>
     </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const check = document.getElementById('check');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    check.checked = false; // Uncheck the checkbox
+                });
+            });
+        });
+    </script>
 </body>
 </html>
